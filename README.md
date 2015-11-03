@@ -806,7 +806,7 @@ used for anything else.</td>
 **Note on log rotation**: Often you may be using external log rotation utilities
 like `logrotate` on Linux or `logadm` on SmartOS/Illumos. In those cases, unless
 your are ensuring "copy and truncate" semantics (via `copytruncate` with
-logrotate or `-c` with logadm) then the fd for your 'file' stream will change.
+logrotate or `-c` with logadm), then the fd for your 'file' stream will change.
 You can tell bunyan to reopen the file stream with code like this in your
 app:
 
@@ -1123,7 +1123,7 @@ The scheme I follow is most succinctly described by the bootstrap guys
 [here](https://github.com/twitter/bootstrap#versioning).
 
 tl;dr: All versions are `<major>.<minor>.<patch>` which will be incremented for
-breaking backward compat and major reworks, new features without breaking
+breaking backward compatible and major reworks, new features without breaking
 change, and bug fixes, respectively.
 
 # License
